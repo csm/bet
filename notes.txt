@@ -1,0 +1,15 @@
+Some notes on this project, in its early days.
+
+This is an attempt to write something similar to aleph, but using core.async
+as the asynchronous library instead of manifold. Also, add some more features
+that are missing from aleph (such as HTTP/2).
+
+Aleph is a wonderful toolkit for using Netty from Clojure, and it gives you
+an excellent common case to work from, simplifying Netty greatly. Having used
+both core.async and manifold in production systems, though, I greatly prefer
+the former. Manifold just doesn't feel like a good, clojurey way of doing
+things, and it unfortunately still has some bugs that have been hard to work
+around.
+
+I'm going to steal liberally from Aleph if there are things I need from it,
+because a lot of the work in Aleph is already excellent.
